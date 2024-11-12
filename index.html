@@ -1,10 +1,67 @@
 <!DOCTYPE html>
-<html>
-<head>
-<style>
-h1 {text-align: center;}
-</style>
-<h1>Yotei Kikuya</h1>
-<p>This is my portfolio site</p>
-</body>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>My test page</title>
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+    <!-- fonts and alignment-->
+    <style>
+        /* General styling for the header */
+        h1 {
+          text-align: left;
+          font-family: 'Roboto';
+          color: white;
+          margin: 0;
+          transition: font-size 0.3s ease, padding 0.3s ease; /* Smooth transition */
+        }
+      
+        /* Initial large header styling */
+        .header-container {
+          background-color: #333;
+          padding: 20px;
+          text-align: center;
+          position: fixed;
+          top: 5%;
+          width: 100%;
+          z-index: 1000;
+        }
+      
+        /* Smaller header styling when scrolled */
+        .header-container.shrink {
+          padding: 10px; /* Reduce padding */
+        }
+      
+        .header-container.shrink h1 {
+          font-size: 3vw; /* Smaller font size */
+        }
+      
+        /* Add padding to the top of the body to prevent content overlap */
+        body {
+          padding-top: 80px;
+          margin: 0;
+        }
+    </style>
+
+    </head>
+    <body>
+    <!-- HEADER-->
+    <div class="header-container">
+       <h1 href="https://yoteikikuya.github.io/">Yotei Kikuya</h1> 
+    </div>
+
+    <!-- BODY -->
+    <img src="images/myreaction.png" alt="A placeholder image. You shouldn't be seeing this." style="width: 25vw; min-width: 50px;">
+
+    <p>At Mozilla, we’re a global community of</p>
+
+    <ul> <!-- changed to list in the tutorial -->
+      <li>technologists</li>
+      <li>thinkers</li>
+      <li>builders</li>
+    </ul>
+
+    <p>working together to keep the Internet alive and accessible, so people worldwide can be informed contributors and creators of the Web. We believe this act of human collaboration across an open platform is essential to individual growth and our collective future.</p>
+
+    <p>Read the <a href="https://www.mozilla.org/en-US/about/manifesto/">Mozilla Manifesto</a> to learn even more about the values and principles that guide the pursuit of our mission.</p>
 </html>
