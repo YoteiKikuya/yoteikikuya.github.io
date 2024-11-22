@@ -62,32 +62,38 @@ p {
 /* #endregion */
 
 /* #region BANNER */
+/* Banner container with responsive height */
 .banner-container {
     position: relative;
     width: 100%;
-    height: 200px; /* Adjust this to your desired visible height */
-    overflow: hidden; /* Hides the parts of the image that go beyond the container */
-}
-
-.banner-container img {
+    height: 50vh; /* Sets the banner height to 50% of the viewport height */
+    overflow: hidden; /* Ensures the image outside the container gets hidden */
+  }
+  
+  /* Image inside the banner */
+  .banner-container img {
     position: absolute;
-    top: -100px; /* Move the image up by 100px */
+    top: 0;
     left: 0;
     width: 100%; /* Ensures the image spans the full width */
-}
-
-.banner-title {
+    height: 100%; /* Ensures the image fills the full height */
+    object-fit: cover; /* Ensures the image covers the container without stretching */
+  }
+  
+  /* Title inside the banner */
+  .banner-title {
     position: absolute;
     top: 50%; /* Centers the title vertically */
     left: 50%; /* Centers the title horizontally */
-    transform: translate(-50%, -80%); /* Fine-tunes centering by shifting it back */
+    transform: translate(-50%, -50%); /* Fine-tunes centering by shifting it back */
     color: white;
-    font-family: 'Roboto', sans-serif;
-    font-size: 5vw; /* Adjust the font size as needed */
+    font-family: 'Arial', sans-serif;
+    font-size: 5vw; /* Adjust the font size responsively */
     font-weight: bold;
     text-align: center;
     z-index: 1; /* Ensure the title is above the image */
   }
+  
 
 /* #endregion */
 
