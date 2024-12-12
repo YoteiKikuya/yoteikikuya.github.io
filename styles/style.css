@@ -103,7 +103,6 @@ p {
   bottom: 0;
   width: 100%;
   background-color: black;
-  display: flex; /* Enable Flexbox */
   justify-content: space-evenly; /* Distributes space evenly between the links */
   align-items: center; /* Vertically centers the links */
   padding: 15px 0; /* Adds vertical padding for the links */
