@@ -21,7 +21,7 @@ body, html {
     opacity: 0.75;
     padding: 1.7vw 1.7vw; /* Adds space to both left and right sides */
     position: fixed;
-    top: -100%; /* Initially hide it off-screen */
+    top: -200%; /* Initially hide it off-screen */
     width: 100%;
     z-index: 1000;
     box-sizing: border-box; /* Ensures padding doesn't affect width calculation */
