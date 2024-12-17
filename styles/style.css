@@ -85,7 +85,7 @@ p {
     position: absolute;
     top: 50%; /* Centers the title vertically */
     left: 50%; /* Centers the title horizontally */
-    transform: translate(-50%, -50%); /* Fine-tunes centering by shifting it back */
+    transform: translate(-50%, -60%); /* Fine-tunes centering by shifting it back */
     color: white;
     font-family: 'Arial', sans-serif;
     font-size: 5vw; /* Adjust the font size responsively */
