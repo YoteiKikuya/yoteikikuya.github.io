@@ -121,3 +121,52 @@ p {
   opacity: 0.8; /* Optional: gives a hover effect */
 }
 /* #endregion */
+
+/* #region Slideshow container */
+.slideshow-container {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* Slides */
+.slide {
+  display: none; /* Hide all slides by default */
+  position: absolute;
+  width: 100%;
+}
+
+/* Slide images */
+.slide img {
+  width: 100%;
+  height: auto;
+}
+
+/* Navigation arrows */
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  user-select: none;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+/* Arrow hover effect */
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+/* #endregion */

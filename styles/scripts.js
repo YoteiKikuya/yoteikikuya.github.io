@@ -13,3 +13,33 @@ window.addEventListener('scroll', function() {
       header.classList.remove('show-header');
     }
   });
+
+// Slideshow scrolling 
+  let currentSlide = 0; // Index of the current slide
+
+  // Function to show a specific slide
+  function showSlide(index) {
+    const slides = document.querySelectorAll('.slide');
+    
+    // Wrap around the slide index
+    if (index >= slides.length) {
+      currentSlide = 0; // Go to the first slide
+    } else if (index < 0) {
+      currentSlide = slides.length - 1; // Go to the last slide
+    } else {
+      currentSlide = index; // Update current slide
+    }
+  
+    // Hide all slides and show only the current one
+    slides.forEach(slide => (slide.style.display = 'none'));
+    slides[currentSlide].style.display = 'block';
+  }
+  
+  // Function to change the slide (forward or backward)
+  function changeSlide(direction) {
+    showSlide(currentSlide + direction);
+  }
+  
+  // Initialize the slideshow by showing the first slide
+  showSlide(currentSlide);
+  
