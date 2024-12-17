@@ -133,7 +133,6 @@ p {
 
 /* Slides */
 .slide {
-  display: none; /* Hide all slides by default */
   position: absolute;
   width: 100%;
 }
