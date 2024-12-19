@@ -123,6 +123,7 @@ p {
 /* #endregion */
 
 /* #region Slideshow container */
+/* Slideshow container */
 .slideshow-container {
   position: relative;
   width: 100%;
@@ -130,13 +131,21 @@ p {
   z-index: 10;
   margin: auto;
   overflow: hidden;
+  background-color: transparent; /* Ensure no background covers it */
 }
 
 /* Slides */
 .slide {
   position: absolute;
   width: 100%;
-  z-index: 10;
+  z-index: 20; /* Higher than most elements */
+  display: none; /* Initially hidden */
+  visibility: visible; /* Ensure they are not hidden */
+}
+
+/* Show the first slide by default */
+.slide:first-child {
+  display: block;
 }
 
 /* Slide images */
@@ -156,6 +165,7 @@ p {
   cursor: pointer;
   border-radius: 50%;
   user-select: none;
+  z-index: 30; /* Ensure arrows are on top */
 }
 
 .prev {
@@ -170,4 +180,5 @@ p {
 .prev:hover, .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
+
 /* #endregion */

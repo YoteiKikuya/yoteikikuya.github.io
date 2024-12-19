@@ -14,13 +14,13 @@ window.addEventListener('scroll', function() {
     }
   });
 
-  document.addEventListener('DOMContentLoaded', function() {
+  document.addEventListener('DOMContentLoaded', function () {
     let currentSlide = 0; // Index of the current slide
   
     // Function to show a specific slide
     function showSlide(index) {
       const slides = document.querySelectorAll('.slide');
-      
+  
       // Wrap around the slide index
       if (index >= slides.length) {
         currentSlide = 0; // Go to the first slide
@@ -31,8 +31,9 @@ window.addEventListener('scroll', function() {
       }
   
       // Hide all slides and show only the current one
-      slides.forEach(slide => (slide.style.display = 'none'));
-      slides[currentSlide].style.display = 'block';
+      slides.forEach((slide, idx) => {
+        slide.style.display = idx === currentSlide ? 'block' : 'none';
+      });
     }
   
     // Function to change the slide (forward or backward)
@@ -47,15 +48,16 @@ window.addEventListener('scroll', function() {
     const prevButton = document.querySelector('.prev');
     const nextButton = document.querySelector('.next');
   
-    // Check if the buttons exist before adding event listeners
     if (prevButton && nextButton) {
-      prevButton.addEventListener('click', function() {
+      prevButton.addEventListener('click', function () {
         changeSlide(-1); // Show previous slide
       });
   
-      nextButton.addEventListener('click', function() {
+      nextButton.addEventListener('click', function () {
         changeSlide(1); // Show next slide
       });
+    } else {
+      console.warn('Slideshow navigation arrows are missing.');
     }
   });
   
