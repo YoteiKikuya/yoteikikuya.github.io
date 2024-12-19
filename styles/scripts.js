@@ -31,16 +31,32 @@ window.addEventListener('scroll', function() {
     let i;
     let slides = document.getElementsByClassName("mySlides");
     let dots = document.getElementsByClassName("dot");
-    if (n > slides.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = slides.length}
+  
+    // Ensure the index wraps around when going past the number of slides
+    if (n > slides.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = slides.length }
+  
+    // Hide all slides initially
     for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";
     }
+  
+    // Remove "active" class from all dots
     for (i = 0; i < dots.length; i++) {
       dots[i].className = dots[i].className.replace(" active", "");
     }
-    slides[slideIndex-1].style.display = "block";
-    dots[slideIndex-1].className += " active";
-  } 
+  
+    // Show the current slide
+    slides[slideIndex - 1].style.display = "block";
+    
+    // Add "active" class to the current dot
+    dots[slideIndex - 1].className += " active";
+  }
+  
+  // Initialize the first slide as visible on page load
+  document.addEventListener('DOMContentLoaded', function () {
+    showSlides(slideIndex);
+  });
+  
   
   
