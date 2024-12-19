@@ -99,11 +99,11 @@ p {
 
 /* #region Black Body Text */
 .black-body-text {
-  font-family: 'Arial', sans-serif; /* Set your preferred font */
+  font-family: 'Roboto', sans-serif; /* Set your preferred font */
   color: black; /* Black text color */
   font-size: 1.5vw; /* Responsive font size */
   line-height: 1.5; /* Adjust line spacing for readability */
-  text-align: left; /* Default text alignment */
+  text-align: center; /* Default text alignment */
   margin: 10px 0; /* Optional: Space around the text */
 }
 /* #endregion */
@@ -187,22 +187,13 @@ p {
 /* Caption text */
 .text {
   color: #f2f2f2;
-  font-size: 52px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 40px;
   padding: 8px 12px;
   position: absolute;
   bottom: 4px;
   width: 100%;
   text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 52px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-  left: 0;
 }
 
 /* The dots/bullets/indicators */
@@ -242,3 +233,4 @@ p {
     opacity: 1;
   }
 }
+/* #endregion */

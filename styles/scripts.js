@@ -15,7 +15,11 @@ window.addEventListener('scroll', function() {
   });
 
   let slideIndex = 1;
-  showSlides(slideIndex);
+
+  // Ensure the first slide is displayed on page load
+  document.addEventListener('DOMContentLoaded', function () {
+    showSlides(slideIndex); // Show the first slide immediately
+  });
   
   // Next/previous controls
   function plusSlides(n) {
@@ -53,10 +57,6 @@ window.addEventListener('scroll', function() {
     dots[slideIndex - 1].className += " active";
   }
   
-  // Initialize the first slide as visible on page load
-  document.addEventListener('DOMContentLoaded', function () {
-    showSlides(slideIndex);
-  });
   
   
   
