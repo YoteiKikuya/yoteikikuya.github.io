@@ -137,7 +137,7 @@ p {
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 50%;
+  max-width: 30%;
   position: relative;
   margin: auto;
   display: flex;
