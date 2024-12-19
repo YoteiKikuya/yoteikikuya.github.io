@@ -91,7 +91,7 @@ p {
     font-size: 5vw; /* Adjust the font size responsively */
     font-weight: bold;
     text-align: center;
-    z-index: 1; /* Ensure the title is above the image */
+    z-index: 30; /* Ensure the title is above the image */
   }
   
 
@@ -127,6 +127,7 @@ p {
   position: relative;
   width: 100%;
   max-width: 600px;
+  z-index: 10;
   margin: auto;
   overflow: hidden;
 }
@@ -135,6 +136,7 @@ p {
 .slide {
   position: absolute;
   width: 100%;
+  z-index: 10;
 }
 
 /* Slide images */
