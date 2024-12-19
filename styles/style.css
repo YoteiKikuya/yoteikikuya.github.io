@@ -99,7 +99,7 @@ p {
 
 /* #region Black Body Text */
 .black-body-text {
-  font-family: 'Roboto', sans-serif; /* Set your preferred font */
+  font-family: 'Minion Pro', serif; /* Set your preferred font */
   color: black; /* Black text color */
   font-size: 1.5vw; /* Responsive font size */
   line-height: 1.5; /* Adjust line spacing for readability */
