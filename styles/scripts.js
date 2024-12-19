@@ -14,51 +14,33 @@ window.addEventListener('scroll', function() {
     }
   });
 
-  document.addEventListener('DOMContentLoaded', function () {
-    let currentSlide = 0; // Index of the current slide
+  let slideIndex = 1;
+  showSlides(slideIndex);
   
-    // Function to show a specific slide
-    function showSlide(index) {
-      const slides = document.querySelectorAll('.slide');
+  // Next/previous controls
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
   
-      // Wrap around the slide index
-      if (index >= slides.length) {
-        currentSlide = 0; // Go to the first slide
-      } else if (index < 0) {
-        currentSlide = slides.length - 1; // Go to the last slide
-      } else {
-        currentSlide = index; // Update current slide
-      }
+  // Thumbnail image controls
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
   
-      // Hide all slides and show only the current one
-      slides.forEach((slide, idx) => {
-        slide.style.display = idx === currentSlide ? 'block' : 'none';
-      });
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
     }
-  
-    // Function to change the slide (forward or backward)
-    function changeSlide(direction) {
-      showSlide(currentSlide + direction);
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
     }
-  
-    // Initialize the slideshow by showing the first slide
-    showSlide(currentSlide);
-  
-    // Add event listeners for arrows
-    const prevButton = document.querySelector('.prev');
-    const nextButton = document.querySelector('.next');
-  
-    if (prevButton && nextButton) {
-      prevButton.addEventListener('click', function () {
-        changeSlide(-1); // Show previous slide
-      });
-  
-      nextButton.addEventListener('click', function () {
-        changeSlide(1); // Show next slide
-      });
-    } else {
-      console.warn('Slideshow navigation arrows are missing.');
-    }
-  });
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+  } 
   
   
