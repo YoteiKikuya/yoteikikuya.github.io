@@ -113,7 +113,7 @@ p {
   font-size: 1vw; /* Responsive font size */
   line-height: 1.5; /* Adjust line spacing for readability */
   text-align: left; /* Default text alignment */
-  margin: 30% 0; /* Optional: Space around the text */
+  margin: 30% 30%; /* Optional: Space around the text */
 }
 
 /* #endregion */
