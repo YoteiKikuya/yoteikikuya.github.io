@@ -97,15 +97,25 @@ p {
 
 /* #endregion */
 
-/* #region Black Body Text */
-.black-body-text {
+/* #region Body Text */
+.body-title {
   font-family: "minion-pro",times,serif; /* Set your preferred font */
   color: black; /* Black text color */
-  font-size: 1.5vw; /* Responsive font size */
+  font-size: 3vw; /* Responsive font size */
   line-height: 1.5; /* Adjust line spacing for readability */
   text-align: center; /* Default text alignment */
   margin: 10px 0; /* Optional: Space around the text */
 }
+
+.body-text {
+  font-family: "minion-pro",times,serif; /* Set your preferred font */
+  color: black; /* Black text color */
+  font-size: 1vw; /* Responsive font size */
+  line-height: 1.5; /* Adjust line spacing for readability */
+  text-align: left; /* Default text alignment */
+  margin: 10px 0; /* Optional: Space around the text */
+}
+
 /* #endregion */
 
 /* #region hotbar */
