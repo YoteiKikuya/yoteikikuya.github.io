@@ -248,8 +248,8 @@ p {
  /* Three image containers (use 25% for four, and 50% for two, etc) */
  .column {
   float: left;
-  width: 20%;
-  padding: 25px;
+  width: 15%;
+  padding: 50px;
 }
 
 /* Clear floats after image containers */
