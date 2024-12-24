@@ -269,7 +269,7 @@ p {
 }
 
 .img-responsive {
-  max-width: 75%; /* Ensures the image scales down within its container */
+  max-height: 20%; /* Ensures the image scales down within its container */
   height: auto; /* Maintains the aspect ratio */
   display: block; /* Centers the image within its container */
 }
