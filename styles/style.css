@@ -261,7 +261,7 @@ p {
 }
 
 .body-image {
-  max-height: 30%;
+  max-width: 30%;
   position: relative;
   margin: auto;
   display: flex;
