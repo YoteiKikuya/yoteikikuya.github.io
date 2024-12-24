@@ -113,7 +113,7 @@ p {
   font-size: 1vw; /* Responsive font size */
   line-height: 1.5; /* Adjust line spacing for readability */
   text-align: left; /* Default text alignment */
-  margin: 0 30%; /* Optional: Space around the text */
+  margin: 20px 15%; /* Optional: Space around the text */
 }
 
 /* #endregion */
@@ -258,4 +258,13 @@ p {
   width: 20%; /* Set the desired width */
   padding: 10px; /* Add padding inside each column */
   text-align: center; /* Optional: Center text inside the column */
+}
+
+.body-image {
+  max-height: 30%;
+  position: relative;
+  margin: auto;
+  display: flex;
+  justify-content: center; /* Horizontally center the slides */
+  align-items: center; /* Vertically center the slides */
 }
