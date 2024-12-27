@@ -147,7 +147,7 @@ p {
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 40%;
+  max-height: 40vh;
   position: relative;
   margin: auto;
   display: flex;
@@ -158,8 +158,8 @@ p {
 /* Hide the images by default */
 .mySlides {
   display: none;
-  width: 100%;
-  height: auto;
+  height: 100%;
+  width: auto;
 }
 
 /* Next & previous buttons */
@@ -267,10 +267,12 @@ p {
 }
 
 .mixedaspect-container {
-  margin: auto; /* Center the container */
-  position: relative; /* Necessary for the navigation arrows */
-  overflow: hidden; /* Hide anything outside the container bounds */
-  text-align: center; /* Center the content within the container */
+  height: 50vh;
+  position: relative;
+  margin: auto;
+  display: flex;
+  justify-content: center; /* Horizontally center the slides */
+  align-items: center; /* Vertically center the slides */
 }
 
 .mixedaspect-container img {
