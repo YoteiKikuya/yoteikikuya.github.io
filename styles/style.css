@@ -147,34 +147,54 @@ p {
 
 /* Slideshow container */
 .slideshow-container {
-  height: 30vh;
+  max-width: 40%;
+  position: relative;
   margin: auto;
   display: flex;
-  flex-direction: column; /* Stack images and captions */
-  align-items: center;
-  overflow: hidden; /* Prevent content from overflowing */
+  justify-content: center; /* Horizontally center the slides */
+  align-items: center; /* Vertically center the slides */
 }
 
+/* Hide the images by default */
 .mySlides {
   display: none;
-  text-align: center; /* Center content */
+  height: 100%;
+  width: auto;
 }
 
-.mySlides img {
-  max-width: 100%; /* Scale image to fit the container width */
-  height: auto; /* Maintain aspect ratio */
-  margin: auto;
-}
-
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
   position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
+  top: 50%;
+  transform: translateY(-50%); /* Vertically center the buttons */
+  width: auto;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
 }
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  left: 0; /* Aligns the left arrow with the left edge */
+  border-radius: 3px 0 0 3px;
+}
+
+.image-container {
+  max-width: 30%; /* Limit the container width */
+  margin: auto; /* Center the container */
+  text-align: left; /* Align text inside the container */
+}
+
 .prev, .next {
   cursor: pointer;
   position: absolute;
