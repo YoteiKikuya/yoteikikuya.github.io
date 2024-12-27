@@ -147,7 +147,7 @@ p {
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 90%;
+  max-width: 40%;
   margin: auto;
   display: flex;
   flex-direction: column; /* Stack images and captions */
@@ -232,6 +232,7 @@ p {
     opacity: 1;
   }
 }
+
 /* #endregion */
 
  /* Three image containers (use 25% for four, and 50% for two, etc) */
