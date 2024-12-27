@@ -267,7 +267,6 @@ p {
 }
 
 .mixedaspect-container {
-  max-width: 30%; /* Constrain the width of the container */
   margin: auto; /* Center the container */
   position: relative; /* Necessary for the navigation arrows */
   overflow: hidden; /* Hide anything outside the container bounds */
@@ -275,7 +274,7 @@ p {
 }
 
 .mixedaspect-container img {
-  height: 30vh; /* Set consistent height for all images */
+  height: 50vh; /* Set consistent height for all images */
   width: auto; /* Scale width proportionally to maintain aspect ratio */
   display: block; /* Avoid inline spacing issues */
   margin: auto; /* Center the image horizontally */
