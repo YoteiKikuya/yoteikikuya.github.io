@@ -268,6 +268,7 @@ p {
   width: 20%; /* Set the desired width */
   padding: 10px; /* Add padding inside each column */
   text-align: center; /* Optional: Center text inside the column */
+  overflow: hidden;
 }
 
 .image-container {
