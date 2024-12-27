@@ -268,7 +268,7 @@ p {
 
 .mixedaspect-container {
   max-width: 30%;
-  max-height: 30%; /* Limit the container width */
+  max-height: 30vh; 
   margin: auto; /* Center the container */
   text-align: left; /* Align text inside the container */
 }
