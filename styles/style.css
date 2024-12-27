@@ -153,6 +153,7 @@ p {
   display: flex;
   justify-content: center; /* Horizontally center the slides */
   align-items: center; /* Vertically center the slides */
+  overflow: hidden;
 }
 
 /* Hide the images by default */
@@ -160,6 +161,15 @@ p {
   display: none;
   height: 100%;
   width: auto;
+}
+
+.mySlides img {
+  max-height: 40vh; /* Limit the height of the images */
+  max-width: 100%; /* Ensure images don’t exceed the container width */
+  height: auto; /* Maintain aspect ratio */
+  width: auto; /* Maintain aspect ratio */
+  margin: auto; /* Center the image */
+  object-fit: contain; /* Ensure the entire image is visible without cropping */
 }
 
 /* Next & previous buttons */
