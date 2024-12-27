@@ -147,31 +147,22 @@ p {
 
 /* Slideshow container */
 .slideshow-container {
-  max-height: 40vh;
   max-width: 90%;
-  position: relative;
   margin: auto;
   display: flex;
-  justify-content: center;
+  flex-direction: column; /* Stack images and captions */
   align-items: center;
-  overflow: hidden;
-  background-color: #000;
-  padding-bottom: 50px; /* Add space for captions */
+  overflow: hidden; /* Prevent content from overflowing */
 }
 
 .mySlides {
   display: none;
-  height: 40vh; /* Fixed height for consistency */
-  width: 100%;
-  text-align: center;
+  text-align: center; /* Center content */
 }
 
 .mySlides img {
-  max-height: 100%;
-  max-width: 100%;
-  height: auto;
-  width: auto;
-  object-fit: contain;
+  max-width: 100%; /* Scale image to fit the container width */
+  height: auto; /* Maintain aspect ratio */
   margin: auto;
 }
 
@@ -181,8 +172,7 @@ p {
   font-size: 20px;
   padding: 8px 12px;
   margin-top: 8px;
-  position: static; /* Place captions directly below images */
-  text-align: center;
+  text-align: center; /* Center caption text */
 }
 
 .prev, .next {
@@ -198,11 +188,11 @@ p {
 }
 
 .next {
-  right: 10px; /* Adjust distance from the right edge */
+  right: 10px;
 }
 
 .prev {
-  left: 10px; /* Adjust distance from the left edge */
+  left: 10px;
 }
 
 .prev:hover, .next:hover {
@@ -211,9 +201,7 @@ p {
 
 .dot-container {
   text-align: center;
-  position: absolute;
-  bottom: 10px;
-  width: 100%;
+  margin-top: 20px; /* Add space between dots and slides */
 }
 
 .dot {
