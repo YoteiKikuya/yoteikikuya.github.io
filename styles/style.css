@@ -266,6 +266,13 @@ p {
   text-align: left; /* Align text inside the container */
 }
 
+.mixedaspect-container {
+  max-width: 30%;
+  max-height: 30%; /* Limit the container width */
+  margin: auto; /* Center the container */
+  text-align: left; /* Align text inside the container */
+}
+
 .img-responsive {
   max-width: 100%; /* Ensure the image scales to fit the container */
   height: auto; /* Maintain aspect ratio */
