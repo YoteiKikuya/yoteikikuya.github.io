@@ -147,7 +147,7 @@ p {
 
 /* Slideshow container */
 .slideshow-container {
-  max-height: 30vh;
+  height: 30vh;
   margin: auto;
   display: flex;
   flex-direction: column; /* Stack images and captions */
