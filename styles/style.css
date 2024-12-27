@@ -189,12 +189,6 @@ p {
   border-radius: 3px 0 0 3px;
 }
 
-.image-container {
-  max-width: 30%; /* Limit the container width */
-  margin: auto; /* Center the container */
-  text-align: left; /* Align text inside the container */
-}
-
 .prev, .next {
   cursor: pointer;
   position: absolute;
