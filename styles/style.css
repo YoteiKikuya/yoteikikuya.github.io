@@ -224,10 +224,12 @@ p {
   font-family: "minion-pro", times, serif;
   font-size: 40px;
   padding: 8px 12px;
-  position: absolute;
-  bottom: 4px;
-  width: 100%;
-  text-align: center;
+  position: fixed; /* Position relative to the viewport */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust to truly center the element */
+  text-align: center; /* Center the text content */
+  z-index: 1000; /* Ensure it appears above other elements */
 }
 
 .dot-container {
