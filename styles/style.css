@@ -224,7 +224,7 @@ p {
   font-family: "minion-pro", times, serif;
   font-size: 40px;
   padding: 8px 12px;
-  position: fixed;
+  position: absolute;
   bottom: 4px;
   width: 100%;
   text-align: center;
