@@ -225,9 +225,9 @@ p {
   font-size: 40px;
   padding: 8px 12px;
   position: absolute;
-  top: 50%; /* Start from the vertical center */
+  top: 80%; /* Start from the vertical center */
   left: 50%; /* Start from the horizontal center */
-  transform: translate(-50%, -50%); /* Adjust for the element's own dimensions */
+  transform: translate(-50%, -80%); /* Adjust for the element's own dimensions */
   display: flex;
   justify-content: center; /* Horizontally center text */
   align-items: center; /* Vertically center text */
