@@ -12,6 +12,7 @@
   <!-- BANNER-->
   <div class="banner-container">
     <h1 class="banner-title">YOTEI KIKUYA</h1>
+    <h1 class="banner-subtitle">Narrative Artist</h1>
     <img src="images/bannerPlaceholder.png" alt="Banner Image">
     <!-- Links placed at the bottom of the banner -->
     <div class="hotbar">
