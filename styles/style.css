@@ -174,7 +174,6 @@ img.mouse-hover:hover {
 .mySlides {
   display: none;
   height: 100%;
-  right: 50%;
   width: auto;
 }
 
