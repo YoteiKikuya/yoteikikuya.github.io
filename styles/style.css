@@ -161,6 +161,7 @@ img.mouse-hover:hover {
 /* #region slideshow */
 
 /* Slideshow container */
+
 .slideshow-container {
   max-width: 100%;
   position: relative;
@@ -297,7 +298,7 @@ img.mouse-hover:hover {
 
 .column {
   margin: 10px; /* Add some spacing between columns */
-  width: 20%; /* Set the desired width */
+  width: 25%; /* Set the desired width */
   padding: 10px; /* Add padding inside each column */
   text-align: center; /* Optional: Center text inside the column */
   overflow: hidden;
