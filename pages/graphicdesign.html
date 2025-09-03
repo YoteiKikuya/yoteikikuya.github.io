@@ -35,28 +35,21 @@
 <script src="/styles/scripts.js"></script>
   <!-- BODY -->
   <p class="body-title">
-    Graphic Design<br>
-  </p>
-  <div class="slideshow-container">
-    <div class="mySlides fade">
-      <img src="/images/lapsustitle.png" alt="Slide 1" style="height:30vw">
-      <div class="caption">Lapsus Title Card (Nov 24, 2024)</div>
+    Graphic Design 
+  <div class="row">
+    <div class="column">
+      <img src="/images/lapsustitle.png" alt="Title for Lapsus (Short Film) (November 24, 2024)<br>Adobe Illustrator" style="width:100%" class="mouse-hover">
+      <img src="/images/CCShatter.png" alt="Logo for KT Concannon (Music Project) (November 18, 2024)<br>Adobe Illustrator, Adobe Photoshop" style="width:100%" class="mouse-hover">
     </div>
-    <div class="mySlides fade">
-      <img src="/images/CCBASE.png" alt="Slide 2" style="height:30vw">
-      <div class="caption">KT Concannon Logo (Nov 18, 2024)</div>
+    <div class="column">
+      <img src="/images/SlicerRed.webp" alt="Pupil Slicer Concert Poster Mockup (July 24, 2025)<br>Adobe Illustrator, Krita" style="width:100%" class="mouse-hover">
     </div>
-    <div class="mySlides fade">
-      <img src="/images/CCShatter.png" alt="Slide 3" style="height:30vw">
-      <div class="caption">KTC Logo (Shatter Variant) (Nov 18, 2024)</div>
+    <div class="column">
+      <img src="/images/leisureforce.webp" alt="Leisureforce mood poster (December 16, 2024)<br>Adobe Illustrator, Krita" style="width:100%" class="mouse-hover">      
     </div>
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-  </div>  
-  <div style="text-align:center">
-    <span class="dot" onclick="currentSlide(1)"></span>
-    <span class="dot" onclick="currentSlide(2)"></span>
-    <span class="dot" onclick="currentSlide(3)"></span>
+    <div class="column">
+      <img src="/images/FuriosaVer3.jpg" alt="Furiosa: A Mad Max Saga Poster Mockup (June 4, 2024)<br>Adobe Illustrator, Adobe Photoshop" style="width:100%" class="mouse-hover">      
+    </div>  
   </div>
   <br>
   <br>
@@ -64,6 +57,11 @@
   <table style="text-align: center; margin-left:35%">
     <tr><td>© 2025 Yotei Kikuya</td></tr>
   </table>
-  <br>   
+  <br>
+<div id="imageModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="modalImg">
+  <div id="caption"></div>
+</div>   
 </body>
 </html>

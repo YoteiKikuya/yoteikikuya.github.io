@@ -1,62 +1,77 @@
-// scripts.js
+// ===== Sticky Header on Scroll =====
 window.addEventListener('scroll', function() {
-    const header = document.querySelector('.header-container');
-    const banner = document.querySelector('.banner-container');
-    
-    // Get the position of the banner (top of the banner relative to the top of the page)
-    const bannerBottom = banner.getBoundingClientRect().bottom;
-    
-    // If the bottom of the banner is above the top of the viewport, show the header
-    if (bannerBottom < 0) {
-      header.classList.add('show-header');
-    } else {
-      header.classList.remove('show-header');
-    }
+  const header = document.querySelector('.header-container');
+  const banner = document.querySelector('.banner-container');
+  const bannerBottom = banner.getBoundingClientRect().bottom;
+
+  if (bannerBottom < 0) header.classList.add('show-header');
+  else header.classList.remove('show-header');
+});
+
+// ===== Slideshow =====
+let slideIndex = 1;
+
+document.addEventListener('DOMContentLoaded', function () {
+  // ===== Image Modal Setup =====
+  const modal = document.getElementById("imageModal");
+  const modalImg = document.getElementById("modalImg");
+  const captionText = document.getElementById("caption");
+  const closeBtn = document.querySelector(".close");
+
+const openModal = (img) => {
+  modal.style.display = "block";
+  modalImg.src = img.src;
+  // Prefer data-caption, fallback to alt
+  captionText.innerHTML = img.dataset.caption || img.alt || "";
+};
+
+  // Event delegation: works for both .column img and .mySlides img
+  document.addEventListener("click", (e) => {
+    const img = e.target.closest(".column img, .mySlides img");
+    if (img) openModal(img);
   });
 
-  let slideIndex = 1;
-
-  // Ensure the first slide is displayed on page load
-  document.addEventListener('DOMContentLoaded', function () {
-    showSlides(slideIndex); // Show the first slide immediately
+  closeBtn.addEventListener("click", () => (modal.style.display = "none"));
+  modal.addEventListener("click", (e) => {
+    if (e.target === modal) modal.style.display = "none";
   });
-  
-  // Next/previous controls
-  function plusSlides(n) {
-    showSlides(slideIndex += n);
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") modal.style.display = "none";
+  });
+
+  // Show first slide (after modal is wired up)
+  showSlides(slideIndex);
+});
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  const slides = document.getElementsByClassName("mySlides");
+  const dots = document.getElementsByClassName("dot");
+  if (!slides.length) return;
+
+  if (n > slides.length) slideIndex = 1;
+  if (n < 1) slideIndex = slides.length;
+
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
   }
-  
-  // Thumbnail image controls
-  function currentSlide(n) {
-    showSlides(slideIndex = n);
-  }
-  
-  function showSlides(n) {
-    let i;
-    let slides = document.getElementsByClassName("mySlides");
-    let dots = document.getElementsByClassName("dot");
-  
-    // Ensure the index wraps around when going past the number of slides
-    if (n > slides.length) { slideIndex = 1 }
-    if (n < 1) { slideIndex = slides.length }
-  
-    // Hide all slides initially
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-    }
-  
-    // Remove "active" class from all dots
-    for (i = 0; i < dots.length; i++) {
+
+  if (dots.length > 0) {
+    for (let i = 0; i < dots.length; i++) {
       dots[i].className = dots[i].className.replace(" active", "");
     }
-  
-    // Show the current slide
-    slides[slideIndex - 1].style.display = "block";
-    
-    // Add "active" class to the current dot
     dots[slideIndex - 1].className += " active";
   }
-  
-  
-  
-  
+
+  slides[slideIndex - 1].style.display = "block";
+}
+
