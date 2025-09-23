@@ -346,6 +346,7 @@ img.mouse-hover:hover {
   flex-wrap: wrap;
   padding: 0 4px;
   align-items: flex-start; /* make all columns align at the top */
+  justify-content: center; /* center-align the columns */
 }
 
 .column {
@@ -359,7 +360,6 @@ img.mouse-hover:hover {
   width: 100%;
   display: block; 
 }
-
 
 .row:after {
   content: "";
