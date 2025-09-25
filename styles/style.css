@@ -33,7 +33,7 @@ body, html {
 }
 
 .header-container a {
-    font-family: "minion-pro",times,serif;
+    font-family: "inter", sans-serif;
     color: white;
     margin: 10px;
     font-size: 2.5vw;
@@ -100,7 +100,7 @@ body, html {
 /* #region BODY */
 p {
     text-align: center;
-    font-family: "minion-pro",times,serif;
+    font-family: "inter", sans-serif;
     color: white;
     font-size: 2vw;
 }
@@ -135,7 +135,7 @@ img.mouse-hover:hover {
     left: 50%; /* Centers the title horizontally */
     transform: translate(-50%, -60%); /* Fine-tunes centering by shifting it back */
     color: white;
-    font-family: "minion-pro",times,serif;
+    font-family: "inter", sans-serif;
     font-size: 5vw; /* Adjust the font size responsively */
     font-weight: bold;
     text-align: left;
@@ -148,7 +148,7 @@ img.mouse-hover:hover {
     transform: translate(-50%, -60%); /* Fine-tunes centering by shifting it back */
     color: white;
     opacity: 0.7;
-    font-family: "minion-pro",times,serif;
+    font-family: "inter", sans-serif;
     font-size: 3vw; /* Adjust the font size responsively */
     text-align: left;
     z-index: 30; /* Ensure the title is above the image */  
@@ -159,7 +159,7 @@ img.mouse-hover:hover {
 
 /* #region Body Text */
 .body-title {
-  font-family: "minion-pro",times,serif; /* Set your preferred font */
+  font-family: "inter", sans-serif; /* Set your preferred font */
   color: black; /* Black text color */
   font-size: 3vw; /* Responsive font size */
   line-height: 1.5; /* Adjust line spacing for readability */
@@ -168,7 +168,7 @@ img.mouse-hover:hover {
 }
 
 .body-text {
-  font-family: "minion-pro",times,serif; /* Set your preferred font */
+  font-family: "inter", sans-serif; /* Set your preferred font */
   color: black; /* Black text color */
   font-size: 1.5vw; /* Responsive font size */
   line-height: 1.5; /* Adjust line spacing for readability */
@@ -193,7 +193,7 @@ img.mouse-hover:hover {
 .hotbar a {
   color: white;
   text-decoration: none;
-  font-family: "minion-pro",times,serif;
+  font-family: "inter", sans-serif;
   font-size: 2vw; /* Adjust the font size as needed */
   padding: 0 30px;
 }
@@ -276,13 +276,13 @@ img.mouse-hover:hover {
 
 .text {
   color: #f2f2f2;
-  font-family: "minion-pro-bold", times, serif;
+  font-family: "inter", sans-serif;
   font-size: 3vw; /* Responsive to image/slide size */
-  font-weight: bold;
+  /* font-weight: bold; */
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 30%; /* Place above the bottom edge of the slide */
+  bottom: 25%; /* Place above the bottom edge of the slide */
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -371,7 +371,7 @@ img.mouse-hover:hover {
 
 .caption {
   color: #000000;
-  font-family: "minion-pro", times, serif;
+  font-family: "inter", sans-serif;
   font-size: 20px;
   padding: 8px 0; /* Add spacing above/below caption text */
   text-align: center;
