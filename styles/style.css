@@ -79,7 +79,7 @@ body, html {
   margin: 10px auto;
   text-align: center;
   color: #ccc;
-  font-size: 25px;
+  font-size: 1.2vw;
 }
 
 /* Close button */
@@ -426,5 +426,5 @@ table {
   text-align: left;
   color:darkgray;
   margin-left:40%;
-  font-size:20px;
+  font-size:1vw;
 }
