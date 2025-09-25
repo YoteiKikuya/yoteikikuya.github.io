@@ -277,18 +277,21 @@ img.mouse-hover:hover {
 .text {
   color: #f2f2f2;
   font-family: "minion-pro-bold", times, serif;
-  font-size: 40px;
+  font-size: 3vw; /* Responsive to image/slide size */
   font-weight: bold;
-  padding: 8px 12px;
   position: absolute;
-  bottom: 0; 
-  left: 50%; /* Start from the horizontal center */
-  transform: translate(-50%, -80%); /* Adjust for the element's own dimensions */
+  left: 0;
+  right: 0;
+  bottom: 30%; /* Place above the bottom edge of the slide */
+  margin: 0 auto;
   display: flex;
-  justify-content: center; /* Horizontally center text */
-  align-items: center; /* Vertically center text */
-  text-align: center; /* Center-align the text itself */
-  width: 90%; /* Optional: Limit the width to avoid text overflowing */
+  justify-content: center;
+  align-items: flex-end;
+  text-align: center;
+  width: 100%; /* Match slide width */
+  height: 100%; /* Match slide height */
+  pointer-events: none; /* Make the text invisible to mouse events */
+  user-select: none;    /* Prevent text selection */
 }
 
 .dot-container {
