@@ -8,41 +8,6 @@ window.addEventListener('scroll', function() {
   else header.classList.remove('show-header');
 });
 
-document.addEventListener('DOMContentLoaded', function () {
-  const lazyImages = [].slice.call(document.querySelectorAll('img[data-src]'));
-
-  if ('IntersectionObserver' in window) {
-    let lazyImageObserver = new IntersectionObserver(function (entries, observer) {
-      entries.forEach(function (entry) {
-        if (entry.isIntersecting) {
-          let img = entry.target;
-          img.src = img.dataset.src;
-          img.removeAttribute('data-src');
-          lazyImageObserver.unobserve(img);
-        }
-      });
-    });
-
-    lazyImages.forEach(function (img) {
-      lazyImageObserver.observe(img);
-    });
-  } else {
-    // Fallback for browsers without IntersectionObserver
-    const lazyLoad = function () {
-      lazyImages.forEach(function (img) {
-        if (img.getBoundingClientRect().top < window.innerHeight && img.dataset.src) {
-          img.src = img.dataset.src;
-          img.removeAttribute('data-src');
-        }
-      });
-    };
-    window.addEventListener('scroll', lazyLoad);
-    window.addEventListener('resize', lazyLoad);
-    window.addEventListener('orientationchange', lazyLoad);
-    lazyLoad();
-  }
-});
-
 // ===== Slideshow =====
 let slideIndex = 1;
 
