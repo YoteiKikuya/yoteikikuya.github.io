@@ -114,7 +114,7 @@ img.mouse-hover:hover {
 .banner-container {
     position: relative;
     width: 100%;
-    height: 30vh; /* Sets the banner height to 50% of the viewport height */
+    height: 18vh; /* Sets the banner height to 50% of the viewport height */
     overflow: hidden; /* Ensures the image outside the container gets hidden */
   }
   
@@ -131,25 +131,25 @@ img.mouse-hover:hover {
   /* Title inside the banner */
   .banner-title {
     position: absolute;
-    top: 30%; /* Centers the title vertically */
-    left: 50%; /* Centers the title horizontally */
+    top: 50%; /* Centers the title vertically */
+    left: 12%; /* Centers the title horizontally */
     transform: translate(-50%, -60%); /* Fine-tunes centering by shifting it back */
     color: white;
     font-family: "inter", sans-serif;
-    font-size: 5vw; /* Adjust the font size responsively */
+    font-size: 3vw; /* Adjust the font size responsively */
     font-weight: bold;
     text-align: left;
     z-index: 30; /* Ensure the title is above the image */
   }
   .banner-subtitle {
     position: absolute;
-    top: 55%; /* Centers the title vertically */
-    left: 50%; /* Centers the title horizontally */
+    top: 80%; /* Centers the title vertically */
+    left: 8.5%; /* Centers the title horizontally */
     transform: translate(-50%, -60%); /* Fine-tunes centering by shifting it back */
     color: white;
     opacity: 0.7;
     font-family: "inter", sans-serif;
-    font-size: 3vw; /* Adjust the font size responsively */
+    font-size: 2vw; /* Adjust the font size responsively */
     text-align: left;
     z-index: 30; /* Ensure the title is above the image */  
   }
@@ -181,12 +181,12 @@ img.mouse-hover:hover {
 /* #region hotbar */
 .hotbar {
   position: absolute;
-  bottom: 0;
+  top: 60%;
   width: 100%;
-  background-color: black;
+  left:15%;
   display: flex; /* Enable Flexbox */
   justify-content: space-evenly; /* Distributes space evenly between the links */
-  align-items: center; /* Vertically centers the links */
+  align-items: right; /* Vertically centers the links */
   padding: 15px 0; /* Adds vertical padding for the links */
 }
 
@@ -412,9 +412,14 @@ input[type=submit]:hover {
 } 
 
 table {
-  width:30%;
+  width:35%;
   text-align: left;
   color:darkgray;
-  margin-left:40%;
+  margin-left:35%;
   font-size:1vw;
+}
+
+tr {
+  vertical-align: top;
+  padding-right:50px;
 }
