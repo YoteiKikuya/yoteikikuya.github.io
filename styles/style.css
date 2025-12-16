@@ -132,9 +132,9 @@ img.mouse-hover:hover {
   /* Title inside the banner */
   .banner-title {
     position: absolute;
-    top: 50%; /* Centers the title vertically */
+    top: 65%; /* Centers the title vertically */
     left: 13%; /* Centers the title horizontally */
-    transform: translate(-50%, -60%); /* Fine-tunes centering by shifting it back */
+    transform: translate(-50%, -75%); /* Fine-tunes centering by shifting it back */
     color: white;
     font-family: "inter", sans-serif;
     font-size: 3vw; /* Adjust the font size responsively */
@@ -144,9 +144,9 @@ img.mouse-hover:hover {
   }
   .banner-subtitle {
     position: absolute;
-    top: 50%; /* Centers the title vertically */
+    top: 80%; /* Centers the title vertically */
     left: 10%; /* Centers the title horizontally */
-    transform: translate(-50%, +20%); /* Fine-tunes centering by shifting it back */
+    transform: translate(-50%, -60%); /* Fine-tunes centering by shifting it back */
     color: white;
     opacity: 0.7;
     font-family: "inter", sans-serif;
