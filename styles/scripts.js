@@ -83,8 +83,8 @@ function openSection(evt, sectionName) {
   }
   tablinks = document.getElementsByClassName("tablink");
   for (i = 0; i < x.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" w3-grey", "");
+    tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
   }
   document.getElementById(sectionName).style.display = "block";
-  evt.currentTarget.className += " w3-grey";
+  evt.currentTarget.className += " w3-red";
 }

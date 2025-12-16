@@ -19,7 +19,8 @@ body, html {
     align-items: center;
     background-color: black;
     opacity: 0.75;
-    padding: 1.7vw 1.7vw; /* Adds space to both left and right sides */
+    padding: 0.5% 2vw; /* Adds space to both left and right sides */
+    padding-right:2%;
     position: fixed;
     top: -200%; /* Initially hide it off-screen */
     width: 100%;
