@@ -133,7 +133,7 @@ img.mouse-hover:hover {
   .banner-title {
     position: absolute;
     top: 50%; /* Centers the title vertically */
-    left: 12%; /* Centers the title horizontally */
+    left: 13%; /* Centers the title horizontally */
     transform: translate(-50%, -60%); /* Fine-tunes centering by shifting it back */
     color: white;
     font-family: "inter", sans-serif;
@@ -145,8 +145,8 @@ img.mouse-hover:hover {
   .banner-subtitle {
     position: absolute;
     top: 50%; /* Centers the title vertically */
-    left: 8.5%; /* Centers the title horizontally */
-    transform: translate(-50%, +10%); /* Fine-tunes centering by shifting it back */
+    left: 10%; /* Centers the title horizontally */
+    transform: translate(-50%, +20%); /* Fine-tunes centering by shifting it back */
     color: white;
     opacity: 0.7;
     font-family: "inter", sans-serif;
