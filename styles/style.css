@@ -146,6 +146,7 @@ img.mouse-hover:hover {
     transform: translate(-50%, -60%); /* Fine-tunes centering by shifting it back */
     color: white;
     opacity: 0.7;
+    font-weight:bold;
     font-family: "inter", sans-serif;
     font-size: 2vw; /* Adjust the font size responsively */
     text-align: left;
