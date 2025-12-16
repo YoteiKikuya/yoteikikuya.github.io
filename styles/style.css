@@ -144,9 +144,9 @@ img.mouse-hover:hover {
   }
   .banner-subtitle {
     position: absolute;
-    top: 80%; /* Centers the title vertically */
+    top: 50%; /* Centers the title vertically */
     left: 8.5%; /* Centers the title horizontally */
-    transform: translate(-50%, -60%); /* Fine-tunes centering by shifting it back */
+    transform: translate(-50%, +10%); /* Fine-tunes centering by shifting it back */
     color: white;
     opacity: 0.7;
     font-family: "inter", sans-serif;
@@ -182,13 +182,14 @@ img.mouse-hover:hover {
 /* #region hotbar */
 .hotbar {
   position: absolute;
-  top: 60%;
+  top: 80%;
   width: 100%;
   left:15%;
+  transform: translate(0, -60%);
   display: flex; /* Enable Flexbox */
   justify-content: space-evenly; /* Distributes space evenly between the links */
   align-items: right; /* Vertically centers the links */
-  padding: 15px 0; /* Adds vertical padding for the links */
+/* Adds vertical padding for the links */
 }
 
 .hotbar a {
