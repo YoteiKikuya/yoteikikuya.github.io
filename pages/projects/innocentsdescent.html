@@ -39,13 +39,14 @@
  <p class="body=title">
   <br>
  </p>
-  <div class="row">
+  <div class="row" style="padding-bottom:3%;padding-top:3.5%">
     <div class="column"style="width:50%">
-    <img src="/images/avheader.webp">
+    <img src="/images/decentlogo.webp">
     </div>
+  <img src="/images/keyartalpha.webp" style="position:absolute;z-index: -100;margin-left:auto;margin-right:auto;margin-top:-5%;width:7.5%; opacity: 60%;">
   </div>
   <br><br><br><div style="margin-left:0;padding-left:10%;width:40%;float:left">
-    <div style="width:100%; height:18vw"><iframe style="width:100%; height:100%" src="https://www.youtube.com/embed/bsdJdCul85c?si=18uvklb1vgLDK_aR" title="Autoviscera Youtube Video"></iframe></div>
+    <div style="width:100%; height:18vw"><iframe style="width:100%; height:100%" src="https://www.youtube.com/embed/K2ZzLxFAd90?si=JLrdIuNRSt7KkTGi" title="The Innocent's Descent Playthrough"></iframe></div>
   <br>
     <table style="width:100%;margin-left:0">
       <tr>
@@ -73,20 +74,23 @@
         <td>Laraine Sim, Caitlin Kirkwood, Anica Li, <br>John Rangel</td>
       </tr>
     </table>
+    <div style="margin-top:10%">
+      <a href="https://iat313group2.itch.io/the-innocents-descent" style="color:orangered; font-size: 1vw;"  target="_blank">Download and Play on itch.io</a><br>
+    </div>
   </div>
   
 <div style="float:left;width:60%">
 <div class="w3-container" style="width:90%;padding-left:3%">
-  <div class="w3-bar w3-white"style="font-size:1.5vw;">
+  <div class="w3-bar"style="font-size:1.5vw;">
     <button class="w3-bar-item w3-button tablink w3-red" style="padding-right: 2%;" onclick="openSection(event,'Process')">Process</button>    
     <button class="w3-bar-item w3-button tablink" style="padding-right: 2%;" onclick="openSection(event,'Retro')">Retrospective</button>
     <button class="w3-bar-item w3-button tablink" style="padding-right: 2%;" onclick="openSection(event,'Sketches')">Style Guide</button>
-    <button class="w3-bar-item w3-button tablink" style="padding-right: 2%;" onclick="openSection(event,'Sketches')">Concept Art</button>
-    <button class="w3-bar-item w3-button tablink" style="padding-right: 2%;" onclick="openSection(event,'Sketches')">Final Assets</button>
+    <button class="w3-bar-item w3-button tablink" style="padding-right: 2%;" onclick="openSection(event,'concept')">Concept Art</button>
+    <button class="w3-bar-item w3-button tablink" style="padding-right: 2%;" onclick="openSection(event,'assets')">Final Art</button>
     <!-- <button class="w3-bar-item w3-button tablink" style="padding-right: 2%;" onclick="openSection(event,'Lore')">Story</button> -->
   </div>
 
-  <div id="Process" class="w3-container w3-white section">
+  <div id="Process" class="w3-container section">
     <p class="body-text"style="margin:0px;font-size:1vw;color:orangered;font-weight:bold"><br>
         Choosing a Script
     </p>
@@ -109,43 +113,100 @@
         Rerouting Priorities
     </p>
     <p class="body-text"style="margin:0px;font-size:1vw;">
-     Despite officially just being the lead artist, I found myself stretched thin. Having learned how to use GDevelop (the initial proposal was to hardcode everything in HTML, which I didn’t see going well), I was doing the bulk of the programming. Additionally, due to a lack of clear direction, I was intuitively designing the sprites based on my interpretation of the script, which meant working on the narrative and gameplay loop as well. This came to a head when it became clear that my idea of an engaging experience did not align with our narrative lead and producer. I recognized that reworking what we made would take less time than continuing to have directional conflicts, so I stepped back from creative and technical oversight to focus on drawing and animation. I communicated this to my producer, then told them that I need a list of assets to be done. Once I got what I needed, I got to work and fully invested in asset protection. This yielded a more focused direction and involvement from my colleagues, and I was able to spend time to fully hand-animate instead of simple transform tool tricks, including fully animated ending cutscenes.<br>
+     Despite officially just being the lead artist, I found myself stretched thin. Having learned how to use GDevelop (the initial proposal was to hardcode everything in HTML, which I didn’t see going well), I was doing the bulk of the programming in the first two weeks. Additionally, due to a lack of clear direction, I was intuitively designing the sprites based on my interpretation of the script, which meant working on the narrative and gameplay loop as well. This came to a head when it became clear that my idea of an engaging experience did not align with our narrative lead and producer. I recognized that reworking what we made would take less time than continuing to have directional conflicts, so I stepped back from creative and technical oversight to focus on drawing and animation. I communicated this to my producer, then told them that I need a list of assets to be done. Under new, focused direction, the project pivoted to a more straightforward visual novel. Once I got what I needed, I got to work and fully invested in asset protection. This yielded a more focused direction and involvement from my colleagues, and I was able to spend time to fully hand-animate instead of simple transform tool tricks, including fully animated ending cutscenes.<br>
     </p>
   </div>
 
-  <div id="Retro" class="w3-container w3-white section" style="display:none">
-    <p class="body-text"style="margin:0px;font-size:1vw;color:orangered;font-weight:bold"><br>Placeholder</p>
-    <p class="body-text"style="margin:0px;font-size:1vw;"></p>
+  <div id="Retro" class="w3-container section" style="display:none"><br>
+    <p class="body-text"style="margin:0px;font-size:1vw;">Although I’m proud of my slice of the work in the final product, I still view this project as a cautionary tale. There was a combination of misaligned vision, unclear direction and imbalanced skillsets that led to a game that didn’t quite meet internal expectations.</p>
+    <p class="body-text"style="margin:0px;font-size:1vw;color:orangered;font-weight:bold"><br>Learning to Walk I: The Script</p>
+    <p class="body-text"style="margin:0px;font-size:1vw;">We impulsively decided on a script half an hour after team formation. The Innocent’s Descent had immediate appeal for its surreal and evocative imagery and classical structure of a journey divisible into distinct sections. However, once the ball was rolling and assets were well under way, fundamental issues with the script in a gameplay context became clear. Chief among these were the lack of protagonist agency and verbose, flowery approach to physical descriptions. This necessitated a complete overhaul of story direction, stretching out ideation by several days. This experience highlighted the importance of intentionality when deciding on a concept, of considering the strengths and weaknesses of several different ideas.</p>
+    <p class="body-text"style="margin:0px;font-size:1vw;color:orangered;font-weight:bold"><br>Learning to Walk II: The Team</p>
+    <p class="body-text"style="margin:0px;font-size:1vw;">The same theme of impulsive decision making extended to deciding team member roles. In my case, I was put on as lead artist under the assumption that some sprite work could be offloaded to other members, who all had visual art backgrounds. However, I discovered too late that my style wasn’t easily replicable, which in addition to the volume of content, led to severe crunch and an imbalanced workload on my end. Sometimes, what seems like the best option at first will close doors on project-saving opportunities in the future.</p>
+    <p class="body-text"style="margin:0px;font-size:1vw;color:orangered;font-weight:bold"><br>Order of Operations</p>
+    <p class="body-text"style="margin:0px;font-size:1vw;">The Innocent’s Descent was vital for me to understand a proper game development pipeline, because we didn’t follow one at all. Our gameplay designer never greyboxed levels or worked out the technical side of interaction before visual assets were finished, which resulted in me inadvertently influencing the overall game design. The rest of my team were sitting ducks until I finished the environment sprites, which meant increased time pressure on me and a lower quality of work. Furthermore,  without details of required assets to go on it largely became dependant on my interpretation of the script. It was essentially a backwards process of me making art, and the team figuring out what to do with it. If I were to do this again, I would ensure that the level is complete and playable before going ahead with the artwork.</p>
+    <p class="body-text"style="margin:0px;font-size:1vw;color:orangered;font-weight:bold"><br>Thinking Like a Designer</p>
+    <p class="body-text"style="margin:0px;font-size:1vw;">The only idea worth getting attached to is a solid product. A character trait, a design or a narrative beat could be the most gratifying, personally appealing thing in the world, but the question ultimately comes down to whether it serves the overall production effectively and feasibly. Initially, I was invested in the idea of a Myst-style puzzle game where the story is entirely told in gameplay and a bleakly humorous tone. However, the nature of the script and the producer’s vision required that we take a more direct approach. I was never tasked with designing gameplay to begin with, so in retrospect it would have been wiser to trust the process.</p>
   </div>
 
-  <div id="Sketches" class="w3-container w3-white section" style="display:none"><br>
-    <img src="/images/earlysketchesav.webp" alt="Earliest Sketches" style="width:100%">
-    <p class="body-text"style="margin:0px;font-size:0.8vw">Earliest Sketches<br><br></p>
-    <div style="float:left;width:50%">
-          <img src="/images/courier.webp" alt="The Courier" style="width:100%">
-          <p class="body-text"style="margin:0px;font-size:0.8vw">The Courier<br><br></p>
-          <img src="/images/avbuildings.webp" alt="Citadel Buildings" style="width:100%">
-          <p class="body-text"style="margin:0px;font-size:0.8vw">Citadel Buildings<br><br></p>
-          <img src="/images/autoviscera storyboard P1.webp" alt="Storyboard 1" style="width:100%">
-          <p class="body-text"style="margin:0px;font-size:0.8vw">Storyboard, Page 1<br><br></p>
-          <img src="/images/autoviscera storyboard P3.webp" alt="Storyboard 2" style="width:100%">
-          <p class="body-text"style="margin:0px;font-size:0.8vw">Storyboard, Page 2<br><br></p>
+  <div id="Sketches" class="w3-container section" style="display:none"><br>
+    <p class="body-text"style="margin:0px;font-size:1vw;">Once I had decided how the game would look, I got started on a guide in our shared Figma document. This served as the primary outline both the technical and artistic requirements of ingame assets.</p>
+    <img src="/images/styleguide.webp" style="width:100%">
+  </div>
+  
+  <div id="concept" class="w3-container section" style="display:none"><br>
+    <div style="float:left;width:65%">
+      <img src="/images/gates.webp" style="width:100%">
+      <p class="body-text"style="margin:0px;font-size:1vw;">The Gates, First Concept<br><br></p>
     </div>
-    <div style="float:left;width:50%">
-          <img src="/images/warbird.webp" alt="The Courier" style="width:100%">
-          <p class="body-text"style="margin:0px;font-size:0.8vw">The Warbird<br><br></p>
-          <img src="/images/necro.webp" alt="Necromancer (scrapped character)" style="width:100%">
-          <p class="body-text"style="margin:0px;font-size:0.8vw">Necromancer (scrapped character)<br><br></p>
-          <img src="/images/autoviscera storyboard P2.webp" alt="Storyboard 3" style="width:100%">
-          <p class="body-text"style="margin:0px;font-size:0.8vw">Storyboard, Page 3<br><br></p>
-          <img src="/images/ReservoirCG.webp" alt="Reservoir" style="width:100%">
-          <p class="body-text"style="margin:0px;font-size:0.8vw">The Reservoir (Future Concept)<br><br></p>
+    <div style="float:left;width:22.25%">
+      <img src="/images/scrappedVal.webp" style="width:100%">
+      <p class="body-text"style="margin:0px;font-size:1vw;">Valgavoth, First Design<br></p>
     </div>
-  </div>  
-  <!-- <div id="Lore" class="w3-container w3-white section" style="display:none">
-    <h2>Tokyo</h2>
-    <p>Tokyo is the capital of Japan.</p>
-  </div> -->
+    <div style="float:left;width:49%">
+      <img src="/images/devilideas.webp" style="width:100%">
+      <p class="body-text"style="margin:0px;font-size:1vw;">Valgavoth, Portrait Drafts<br></p>
+    </div>
+    <div style="float:left;width:38.25%">
+      <img src="/images/deathdodel.webp" style="width:100%">
+      <p class="body-text"style="margin:0px;font-size:1vw;">Valgavoth, Final Design<br><br></p>
+    </div>
+    <div style="float:left;width:48%">
+      <img src="/images/rodion.webp" style="width:100%">
+      <p class="body-text"style="margin:0px;font-size:1vw;">Rodion, Initial Design</p>
+    </div> 
+    <div style="float:left;width:38.25%">
+      <img src="/images/Rene.webp" style="width:100%">
+      <p class="body-text"style="margin:0px;font-size:1vw;">Rene, Ingame Render Concept</p>
+    </div>
+    <div style="float:left;width:87.25%">
+      <img src="/images/valga.webp" style="width:100%">
+      <p class="body-text"style="margin:0px;font-size:1vw;">Valgavoth, Ingame Render Concept</p>
+    </div>        
+  </div>
+
+  <div id="assets" class="w3-container section" style="display:none"><br>
+    <div style="float:left;width:45%">
+      <img src="/images/keyart.webp" style="width:100%">
+      <p class="body-text"style="margin:0px;font-size:1vw;">Key Art<br><br></p>
+    </div>
+    <div style="float:left;width:45%">
+      <img src="/images/apostate-ezgif.com-video-to-gif-converter.gif" style="width:100%">
+      <p class="body-text"style="margin:0px;font-size:1vw;">The Apostate<br><br></p>
+    </div>
+      <div style="float:left;width:45%">
+      <img src="/images/moodart.webp" style="width:100%">
+      <p class="body-text"style="margin:0px;font-size:1vw;">Menu Screen<br><br></p>
+    </div>
+    <div style="float:left;width:45%">
+      <img src="/images/ingamegates.webp" style="width:100%">
+      <p class="body-text"style="margin:0px;font-size:1vw;">The Gates<br><br></p>
+    </div>
+    <div style="float:left;width:44.5%">
+      <img src="/images/malebolge.webp" style="width:100%">
+      <p class="body-text"style="margin:0px;font-size:1vw;">Malebolge<br><br></p>
+    </div>
+    <div style="float:left;width:45.5%">
+      <img src="/images/decision.webp" style="width:100%">
+      <p class="body-text"style="margin:0px;font-size:1vw;">Encounter in Malebolge<br><br></p>
+    </div>
+    <div style="float:left;width:45%">
+      <img src="/images/gauzeassets2.webp" style="width:100%">
+      <p class="body-text"style="margin:0px;font-size:1vw;">Environment Spritesheet<br><br></p>
+    </div>
+    <div style="float:left;width:45%">
+      <img src="/images/itemcons.webp" style="width:100%">
+      <p class="body-text"style="margin:0px;font-size:1vw;">Item Portraits<br><br></p>
+    </div>
+    <div style="float:left;width:45%">
+      <img src="/images/endinga.gif" style="width:100%">
+      <p class="body-text"style="margin:0px;font-size:1vw;">Ending A Cutscene<br><br></p>
+    </div>
+    <div style="float:left;width:45%">
+      <img src="/images/endingb.gif" style="width:100%">
+      <p class="body-text"style="margin:0px;font-size:1vw;">Ending B Cutscene<br><br></p>
+    </div>
+  </div>
 </div>
 </div>
 <div>
