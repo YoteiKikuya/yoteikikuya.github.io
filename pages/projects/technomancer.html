@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Technomancer - Yotei Kikuya</title>
+  <link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+  <link href="/styles/style.css" rel="stylesheet" type="text/css">
+
+</head>
+<body style = "background-color:#FFFFFF">
+
+<!-- Banner Section -->
+<div class="banner-container">
+  <a href="https://yoteikikuya.github.io/"><h1 class="banner-title">YOTEI KIKUYA</h1></a>
+  <h1 class="banner-subtitle">Narrative Artist</h1>
+  <img src="/images/lampwood.webp" alt="Banner Image">
+  <!-- Links placed at the bottom of the banner -->
+  <div class="hotbar">
+
+    <a href="https://yoteikikuya.github.io/pages/about.html">About</a>
+ 
+    <a href="https://yoteikikuya.github.io/pages/contact.html">Contact</a>
+  </div>
+  </div>
+</div>
+
+<!-- Header (Initially Hidden, Becomes Fixed After Scrolling) -->
+<div class="header-container">
+  <a href="https://yoteikikuya.github.io/">Yotei Kikuya</a> 
+  <a href="https://yoteikikuya.github.io/pages/about.html">About</a>
+  <a href="https://yoteikikuya.github.io/pages/contact.html">Contact</a>
+</div>
+
+<script src="/styles/scripts.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+
+<!-- BODY -->
+ <p class="body=title">
+  <br>
+ </p>
+  <div style="width:50%;margin-left:auto;margin-right:auto">
+  <img src="/images/tmheader.webp"style="width:100%">
+  </div>
+  <br><br><br><div style="margin-left:0;padding-left:10%;width:40%;float:left">
+    <div style="width:100%; height:18vw"><iframe style="width:100%; height:100%" src="https://www.youtube.com/embed/RDRoYK_21xY?si=F5PG5jX6CqFwvGG5" title="Technomancer Playthrough"></iframe></div>
+  <br>
+    <table style="width:100%;margin-left:0">
+      <tr>
+        <td style="color:orangered">Purpose:</td>
+        <td>School Project (solo)</td>
+      </tr>
+      <tr>
+        <td style="color:orangered">Roles:</td>
+        <td>Game Design, Programming, UX/UI, Artwork, Sound Design, QA</td>
+      </tr>     
+      <tr>
+        <td style="color:orangered">Category:</td>
+        <td>Video Game</td>
+      </tr>
+      <tr>
+        <td style="color:orangered">Software:</td>
+        <td>Eclipse, Java (Processing core), Krita, Blender, Audacity</td>
+      </tr>    
+      <tr>
+        <td style="color:orangered">Date:</td>
+        <td>07/24/2025 - 08/15/2025</td>
+      </tr>
+    </table>
+  </div>
+  
+<div style="float:left;width:60%">
+<div class="w3-container" style="width:90%;padding-left:3%">
+  <div class="w3-bar w3-white"style="font-size:1.5vw;">
+    <button class="w3-bar-item w3-button tablink w3-red" style="padding-right: 2%;" onclick="openSection(event,'Process')">Process</button>    
+    <button class="w3-bar-item w3-button tablink" style="padding-right: 2%;" onclick="openSection(event,'Retro')">Retrospective</button>
+    <button class="w3-bar-item w3-button tablink" style="padding-right: 2%;" onclick="openSection(event,'Sketches')">Artwork</button>
+    <!-- <button class="w3-bar-item w3-button tablink" style="padding-right: 2%;" onclick="openSection(event,'Lore')">Story</button> -->
+  </div>
+
+  <div id="Process" class="w3-container w3-white section">
+    <p class="body-text"style="margin:0px;font-size:1vw;color:orangered;font-weight:bold">
+      <br>The Concept: Mind Weaponry</p>
+    <p class="body-text"style="margin:0px;font-size:1vw;">
+        A few years ago, I had a concept for a top-down sci-fi RPG, where a potential skill tree was cybernetics and drone control. For this project, I dug up this concept. I wanted to create a shooter game with a more challenging and in-depth loop beyond clicking on a spot and firing a projectile. The primary weapon in Technomancer is a swarm of drones which can be manually controlled with the arrow keys or recalled, creating a protective bubble.
+    </p>
+    <p class="body-text"style="margin:0px;font-size:1vw;color:orangered;font-weight:bold">
+      <br>Knowledge is Power</p>
+    <p class="body-text"style="margin:0px;font-size:1vw">
+        Earlier in the year, I had attempted to make a Metroidvania in Unity. Although the project fell through, it gave me the confidence in object-oriented programming needed to make Technomancer possible. Chief among the pieces I learned to make is the camera, which was its own class. This allowed me to expand the game world beyond the bounds of the screen, in contrast to my first game, Knokkelmann. This extended to adapting scenes into gamestates, so it allowed for a level of depth I otherwise couldn’t have achieved.
+    </p>
+    <p class="body-text"style="margin:0px;font-size:1vw;color:orangered;font-weight:bold">
+      <br>The Prototype Phase</p>
+    <p class="body-text"style="margin:0px;font-size:1vw">
+        Before settling on a visual identity, I wanted to make a rock-solid prototype to ensure that Technomancer was mechanically sound. Using 2D primitives built into the Processing core, I ensured that my camera system, procedural generation, and drone controls were working before adding all the additional polish and gameplay loop features.
+    </p>
+    <p class="body-text"style="margin:0px;font-size:1vw;color:orangered;font-weight:bold">
+      <br>Enemy Behaviours</p>
+    <p class="body-text"style="margin:0px;font-size:1vw">
+        There are two enemy variants in Technomancer: The pursuer and the sniper. The pursuer is fairly straightforward; if it has a line of sight with the player within a certain range it will charge at them. The sniper on the other hand, aims to keep a set distance from the player as it fires pot shots from the backlines. In order to prevent the player from being relentlessly pursued, I added a simple line of sight system. It uses a vector between the enemy and player, and if there is a piece of terrain obstructing the line, they will stop attacking. This allows the player to seek respite and pick off enemies from a safe vantage point, using their cyberpsychic power to its fullest extent.
+    </p>
+    <p class="body-text"style="margin:0px;font-size:1vw;color:orangered;font-weight:bold">
+      <br>Necessary Patterns</p>
+    <p class="body-text"style="margin:0px;font-size:1vw">
+        A requirement for the project was to incorporate fractals and Perlin noise generation, being major topics in class. I used fractal generation to create the lightning effect, which serves as a visual indicator of enemies taking damage and the player’s shield being active. I used Perlin noise to spawn a terrain tile in the lowest brightness regions, so that the world layout and strategy is unique on each playthrough.   
+    </p>
+    <p class="body-text"style="margin:0px;font-size:1vw;color:orangered;font-weight:bold">
+      <br>Visual Style: Finding Futures Past</p>
+    <p class="body-text"style="margin:0px;font-size:1vw">
+        I had initially planned for a pixel art style, but due to time constraints and oversaturation, I opted for primitive 3D sprites, inspired by the original Fallout games. I booted up Blender and created every asset using basic, low-poly shapes, took screenshots in orthographic view, and uploaded them as sprites.  
+    </p>
+  </div>
+
+  <div id="Retro" class="w3-container w3-white section" style="display:none">
+    <p class="body-text"style="margin:0px;font-size:1vw;color:orangered;font-weight:bold">
+      <br>Fun First</p>
+    <p class="body-text"style="margin:0px;font-size:1vw;">
+        This project was important for me to understand how to design a fun, unique and engaging gameplay loop. Before, I had prioritized games being visually appealing first and foremost due to my artistic leaning, but from a game developer perspective this is a secondary priority. As this was for a programming class, I wasn’t being graded on art or sound design. This meant putting the bulk of my time and effort into developing a system that would be nice to interact with no matter what coat of paint it uses. This lesson became more valuable after my experience working on my next game, The Innocent’s Descent, which further illuminated the importance of solid mechanical foundations.  
+    </p>
+    <p class="body-text"style="margin:0px;font-size:1vw;color:orangered;font-weight:bold">
+      <br>Future Considerations</p>
+    <p class="body-text"style="margin:0px;font-size:1vw;">
+        In a scenario where I expand on this project, there are a number of things I would want to deepen and adjust. Firstly, I would switch to a proper game engine, since manually coding everything in Java is a hassle. The most important thing I would add is connecting the enemies and objective terminals more, as the two are largely independent systems. The terminals acting as "leaders" for the enemies and dictating their behaviours is an option. Expanding on this, more sophisticated enemy AI is a must as well. Enemies that seek cover or otherwise strategically position themselves would make for a more challenging, but still fair loop. Finally, introducing an exploration element, possibly a semi-open world with diverse biomes, enemy types and discoverable lore would be the most ambitious, but enriching change.    
+    </p>
+    <p class="body-text"style="margin:0px;font-size:1vw;color:orangered;font-weight:bold">
+      <br>Cut Content</p>
+    <p class="body-text"style="margin:0px;font-size:1vw;">
+        There were a number of ideas that would have been cool, but the complexity of implementation would have taken away from polishing the most important core elements. The first of these was the laser gate configuration, where the player could place stationary drones around the map, which would then draw lasers connecting each other, that could harm both enemies and the player. This would have given the player a method of area control while at the expense of reducing their offensive capabilities. The second cut feature was an enemy known as the Vanguard. I had gone as far as to model it, and its intended behaviour was to intercept drones, slow them down and reduce their damage while taking pressure off of other enemies. I decided to remove this enemy as it didn’t add enough to the gameplay loop, nor was it very fun to deal with.
+    </p>
+  </div>
+
+    <div id="Sketches" class="w3-container w3-white section" style="display:none"><br>
+        <div style="width:50%;float:left;padding-bottom: 1%;">
+            <img src="/images/tmcamera.png"style="width:100%">
+            <p class="body-text"style="margin:0px;font-size:1vw;">Camera Test<br><br></p>
+            <img src="/images/tmUI.png"style="width:100%">
+            <p class="body-text"style="margin:0px;font-size:1vw;padding-bottom:1%">Core Assets + UI</p>
+        </div>
+        <div style=width:50%;float:left>
+            <img src="/images/tmproto.png"style="width:100%">
+            <p class="body-text"style="margin:0px;font-size:1vw;">Greybox Prototype<br><br></p>
+            <img src="/images/tmtitle.png"style="width:100%">
+            <p class="body-text"style="margin:0px;font-size:1vw;">Title Screen Before Render</p>
+        </div>
+        <img src="/images/tmsprites.png"style="width:100%">
+        <p class="body-text"style="margin:0px;font-size:1vw;">Final Rendered Sprites</p>
+    </div>  
+</div>
+</div>
+<div>
+  <table style="text-align: center; margin-left:35%;padding-top:10%">
+    <tr><td>© 2025 Yotei Kikuya</td></tr>
+  </table>
+  <br>
+</div>
+</body>
+</html>
