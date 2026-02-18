@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="sidebar">
+        <h1>Yotei Kikuya</h1>
+        <h2 style="padding-top:1vh;"> Digital Art</h2>
+        <h2>Traditional Art</h2>
+        <h2>Graphic Design</h2>
+        <h2 style="padding-top:1vh;">About</h2>
+        <h2>Contact</h2>
+    </div>
+    <div style="align-items: center;display:flex;justify-content: center;padding:5vh;">
+        <h1 style="font-size:5rem;font-weight:15;text-align: center;       
+        -webkit-touch-callout: none;
+       -webkit-user-select: none;
+       -khtml-user-select: none;
+       -moz-user-select: none;
+       -ms-user-select: none;
+        user-select: none;">Finding life in strange worlds.</h1>
+    </div>
+    <div style="position:absolute;background-color: white;width:100%">
+
+    </div>
+    <div style="margin:20vw auto 0 auto; width:80vw; padding-bottom: 10vw;;">
+            <div class="row" style="justify-content: center;">
+            <div class="column" style="width:40%;">
+                <a href="https://yoteikikuya.github.io/pages/projects/autoviscera.html">
+                <img src="/images/AVLogoGIF.gif" alt="Autoviscera" style="width:100%" class="mouse-hover">
+                </a>
+                <p class="body-text" style="margin-left:0px;margin-top:0px"> December 2025 | Animated Short Film</p>
+            </div>
+            <div class="column" style="width:40%">
+                <a href="https://yoteikikuya.github.io/pages/projects/innocentsdescent.html">
+                <img src="/images/descentCover.webp" alt="Innocent's Descent" style="width:100%" class="mouse-hover">
+                </a>
+                <p class="body-text" style="margin-left:0px;margin-top:0px"> December 2025 | Visual Novel</p>
+            </div>
+            </div>
+            <div class="row" style="justify-content: center;">
+            <div class="column" style="width:40%">
+                <a href="https://yoteikikuya.github.io/pages/projects/technomancer.html">
+                <img src="/images/technomancercover.webp" alt="Technomancer" style="width:100%" class="mouse-hover">
+                </a>
+            <p class="body-text" style="margin-left:0px;margin-top:0px"> August 2025 | Video Game</p>
+            </div>
+            <div class="column" style="width:40%">
+                <a href="https://yoteikikuya.github.io/pages/projects/beatrix.html">
+                <img src="/images/bea0.webp" alt="Beatrix" style="width:100%" class="mouse-hover">
+                </a>
+            <p class="body-text" style="margin-left:0px;margin-top:0px"> August 2024 | Character Concept Art</p>
+            </div> 
+            </div>
+    </div>
+
+<!-- Mouse Stroke Effect  -->
+    <script>
+        let lastX = null;
+        let lastY = null;
+        document.addEventListener("mousemove", function(e){
+            let currentX = e.clientX;
+            let currentY = e.clientY;
+            if (lastX !== null && lastY !== null) {
+                let dx = currentX - lastX;
+                let dy = currentY - lastY;
+                let distance = Math.sqrt(dx * dx + dy * dy);
+                let spacing = 2;
+                for (let i = 0; i < distance; i += spacing) {
+                    let x = lastX + (dx * i / distance);
+                    let y = lastY + (dy * i / distance);
+                    createCircle(x, y);
+                }
+            }
+
+            lastX = currentX;
+            lastY = currentY;
+        });
+
+        function createCircle(x, y) {
+            let circle = document.createElement("span");
+
+            circle.style.left = x + "px";
+            circle.style.top = y + "px";
+
+            // Get viewport size
+            const vw = window.innerWidth;
+            const vh = window.innerHeight;
+
+            // Create temp image to get natural size
+            const img = new Image();
+            img.src = "/images/speeder.webp";
+
+            img.onload = function () {
+
+                const imgRatio = img.width / img.height;
+                const screenRatio = vw / vh;
+
+                let bgWidth, bgHeight;
+
+                if (screenRatio > imgRatio) {
+                    bgWidth = vw;
+                    bgHeight = vw / imgRatio;
+                } else {
+                    bgHeight = vh;
+                    bgWidth = vh * imgRatio;
+                }
+
+                const offsetX = (bgWidth - vw) / 2;
+                const offsetY = (bgHeight - vh) / 2;
+
+                circle.style.backgroundSize = `${bgWidth}px ${bgHeight}px`;
+                circle.style.backgroundPosition = `-${x + offsetX}px -${y + offsetY}px`;
+            };
+
+            document.body.append(circle);
+
+            circle.addEventListener("animationend", () => {
+                circle.remove();
+            });
+        }
+    </script>
+</body>
+</html>
