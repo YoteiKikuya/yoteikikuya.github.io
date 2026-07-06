@@ -1,97 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Home - Yotei Kikuya</title>
-  <link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
-  <link href="/styles/style.css" rel="stylesheet" type="text/css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Yotei Kikuya</title>
+    <link href="css/style.css" rel="stylesheet">
 </head>
-<body style = "background-color:#FFFFFF">
-<script src="/styles/scripts.js"></script>
-<!-- Banner Section -->
-<div class="banner-container">
-  <a href="https://yoteikikuya.github.io/"><h1 class="banner-title">YOTEI KIKUYA</h1></a>
-  <a href="https://yoteikikuya.github.io/"><h1 class="banner-subtitle">Narrative Artist</h1></a>
-  <img src="/images/lampwood.webp" alt="Banner Image">
-  <!-- Links placed at the bottom of the banner -->
-  <div class="hotbar">
-
-    <a href="https://yoteikikuya.github.io/pages/about.html">About</a>
- 
-    <a href="https://yoteikikuya.github.io/pages/contact.html">Contact</a>
-  </div>
-  </div>
-</div>
-
-<!-- Header (Initially Hidden, Becomes Fixed After Scrolling) -->
-<div class="header-container">
-  <a href="https://yoteikikuya.github.io/">Yotei Kikuya</a> 
-  <a href="https://yoteikikuya.github.io/pages/about.html">About</a>
-  <a href="https://yoteikikuya.github.io/pages/contact.html">Contact</a>
-</div>
-
-
-<!-- BODY -->
-<!--#region Slideshow container -->
-
-<div class="row" style="justify-content: center;">
-  <div class="column" style="width:40%;">
-    <a href="https://yoteikikuya.github.io/pages/projects/autoviscera.html">
-      <img src="/images/AVLogoGIF.gif" alt="Autoviscera" style="width:100%" class="mouse-hover">
-    </a>
-    <p class="body-text" style="margin-left:0px;margin-top:0px"> December 2025 | Animated Short Film</p>
-  </div>
-  <div class="column" style="width:40%">
-    <a href="https://yoteikikuya.github.io/pages/projects/innocentsdescent.html">
-    <img src="/images/descentCover.webp" alt="Innocent's Descent" style="width:100%" class="mouse-hover">
-    </a>
-    <p class="body-text" style="margin-left:0px;margin-top:0px"> December 2025 | Visual Novel</p>
-  </div>
-</div>
-<div class="row" style="justify-content: center;">
-  <div class="column" style="width:40%">
-    <a href="https://yoteikikuya.github.io/pages/projects/technomancer.html">
-    <img src="/images/technomancercover.webp" alt="Technomancer" style="width:100%" class="mouse-hover">
-    </a>
-  <p class="body-text" style="margin-left:0px;margin-top:0px"> August 2025 | Video Game</p>
-  </div>
-  <div class="column" style="width:40%">
-    <a href="https://yoteikikuya.github.io/pages/projects/beatrix.html">
-      <img src="/images/bea0.webp" alt="Beatrix" style="width:100%" class="mouse-hover">
-    </a>
-  <p class="body-text" style="margin-left:0px;margin-top:0px"> August 2024 | Character Concept Art</p>
-  </div> 
-</div>
-
-<p class="body-title">
-  Galleries
-</p>
-  <div class="row" style="justify-content: center;">
-    <div class="column">
-      <a href="https://yoteikikuya.github.io/pages/digitalart.html">
-      <img src="/images/rendertitle.webp" alt="Digital Renders" style="width:100%" class="mouse-hover">
-      </a>
-    </div>
-    <div class="column">
-      <a href="https://yoteikikuya.github.io/pages/tradart.html">
-      <img src="/images/tradtitle.webp" alt="Traditional Art" style="width:100%" class="mouse-hover">
-      </a>
-    </div>
-    <div class="column">
-      <a href="https://yoteikikuya.github.io/pages/graphicdesign.html">
-      <img src="/images/gdtitle.webp" alt="Graphic Design" style="width:100%" class="mouse-hover">
-      </a>
-    </div>
-  </div> 
-  <!-- Link to external JavaScript file -->
-  <script src="/scripts.js" defer></script>
-  <br>
-  <br>
-  <br>
-  <table style="text-align: center; margin-left:35%">
-    <tr><td>© 2025 Yotei Kikuya</td></tr>
-  </table>
-  <br>
+<body>
+    <header class="home-header">
+        <div class="nav-container">
+            <a href="index.html">
+                <div class="home-link">
+                    YOTEI KIKUYA
+                </div>
+            </a>
+            <nav>
+                <a href="#projects">PROJECTS</a>
+                <a href="#about">ABOUT</a>
+                <a href="#contact">CONTACT</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="major-block" id="projects">
+            <h2>
+                Projects
+            </h2>
+            <div class="project-card-container">
+                <a href="pages/sleeplesscity.html">
+                    <div class="nav-button">                 
+                            <div class="project-blurb">
+                                <h2>
+                                    Sleepless City
+                                </h2>
+                                <p>
+                                    Tabletop Game Art
+                                </p>
+                            </div>
+                            <img src="assets/sleepless_thumb.avif" loading="lazy"
+                            alt="A thumbnail displaying a collection of player cards
+                                for made for Sleepless City by Ninth Layer">
+                        </div>
+                </a>
+                <a href="pages/iersza.html">
+                    <div class="nav-button">          
+                            
+                            <div class="project-blurb">
+                                <h2>
+                                    Iersza, the Foundry Lord
+                                </h2>
+                                <p>
+                                    Character Concept Art
+                                </p>
+                            </div>
+                            <img src="assets/iersza_thumb.avif" loading="lazy"
+                            alt="A thumbnail depicting a rendered 3/4 view of
+                                Iersza, an original character by Yotei Kikuya">
+                        </div>
+                </a>
+            </div>
+        </section>
+        <section id="about">
+            <article class="major-block">
+                <h2>Who I am</h2>
+                <p>
+                    I’m Yotei, an illustrator, concept artist, game developer 
+                    and narrative writer. I am an undergrad at Simon Fraser 
+                    University’s School of Interactive Arts and Technology.
+                </p>
+                <h2>What I do</h2>
+                <p>   
+                    I specialize in employing narrative to bridge aesthetics and 
+                    user interactions to develop engaging experiences. Analyzing 
+                    all aspects of a project, I identify emergent thematic and 
+                    experiential threads that help ground the complete picture. 
+                </p>
+                <h2>What I Stand For</h2>
+                <p>
+                    I believe that empathy is the most important pillar of 
+                    design. Every decision is made with the audience’s emotions 
+                    in mind. In a world that increasingly prioritizes pure 
+                    mechanical efficiency, maintaining the spirit of 
+                    human-centric art and design is more important than ever. 
+                </p>
+            </article>
+        </section>
+        <section class="major-block" id="contact">
+            <h2>Contact</h2>
+                <!-- Form Powered and template taken by Web3Forms.com -->
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="06999f0f-c47e-4525-bc9b-9794b26b545e">
+                    <input type="text" class="required-info" name="name" required placeholder="Full Name (required)">
+                    <input type="email" class="required-info" name="email" required placeholder="E-Mail Address (required)">
+                    <textarea name="message" id="message-input" required placeholder="Your message here..."></textarea>
+                    <p class="form-disclaimer">Submission powered by <a href="https://web3forms.com/" target="blank">Web3Forms</a></p>
+                    <button type="submit" class="quick-button" id="submit">Submit</button>
+                </form>
+        </section>
+    </main>
+    <footer>
+        <div class="socials-container">
+            <a class="social-icon" href="https://www.linkedin.com/in/yotei-kikuya-998519357/" target="_blank" aria-label="LinkedIn Profile">
+                <img class="social-icon" src="https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg" alt="LinkedIn Logo">
+            </a>
+            <a class="social-icon" href="https://www.instagram.com/art.by.yotei/" target="_blank" aria-label="Instagram Profile">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" alt="Instagram Logo">
+            </a>                    
+        </div>
+    </footer>
 </body>
 </html>
