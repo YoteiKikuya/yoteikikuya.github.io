@@ -421,6 +421,31 @@
             background-color: var(--debug-orange);
           }
 
+    .quote {
+      color:var(--accent);
+      margin-left:2em;
+      font-weight:bold;
+      font-size:2em;
+      line-height:100%
+    }
+
+    .iframe-container {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      padding-top: 56.25%;
+    }
+
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+    }
+
 /* MOBILE */  
   @media screen and (max-width:53em) {
     /* HOMEPAGE */
